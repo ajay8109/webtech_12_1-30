@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+             .a1:link{
+                background-color: green;
+             }
+
+             .a2:active{
+                background-color: aqua;
+             }
+
+             .a3:visited{
+                background-color: red;
+             }
+
+             input[type="checkbox"]:checked{
+                accent-color: yellow;
+                height: 50px;
+                width: 50px;
+             }
+             input[type="radio"]:checked{
+                accent-color: pink;
+                height: 50px;
+                width: 50px;
+             }
+
+             input[type="text"]:focus{
+                height: 30px;
+                width: 80px;
+                background-color: aquamarine;
+             }
+             button:hover{
+                background-color: red;
+                transition-duration: 3s;
+
+             }
+    </style>
+</head>
+<body>
+    <!-- pseudo class selector link -->
+      <a href="https://www.youtube.com/" class="a1">click for  open</a>
+
+      <hr>
+      <!-- active selector -->
+      <br>
+      <a href="https://www.youtube.com/" class="a2">click for open</a>
+      <br>
+      <hr> 
+      <!-- visited selector -->
+      <a href="https://www.youtube.com/" class="a3">click for open</a> <br>
+      <br>
+
+      <hr>
+      <!-- psedu class selector checked -->
+
+      <label for="">hobby</label>
+      <input type="checkbox">playing
+      <input type="checkbox">dancing
+      <input type="checkbox">singing
+
+       
+      <br>
+      <br>
+      <label for="gen">Gender</label>
+      <input type="radio" name="gen">Male
+      <input type="radio" name="gen">Female
+      <input type="radio" name="gen">Others
+
+      <br>
+      <br>
+      <hr>
+      <!-- pseudo class selector focus -->
+      address: <input type="text">
+       
+      <hr>
+      <br>
+      <br>
+      <!-- pseudo class selector hover -->
+      <button>click</button>
+</body>
+</html>
