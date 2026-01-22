@@ -1,0 +1,36 @@
+.rotate{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    transition: transform 3s;
+}
+
+.rotate:hover{
+    transform: rotate(180deg);
+}
+
+/* ========================================================================================================= */
+
+.skew{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    transition: transform 3s;
+}
+
+.skew:hover{
+    transform: skew(20deg, 30deg);
+}
+
+/* ================================================================================================================ */
+
+.combined{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    transition: transform 3s;
+}
+
+.combined:hover{
+    transform: translate(50px, 30px) scale(1.2) rotate(180deg) skew(20deg, 30deg);
+}

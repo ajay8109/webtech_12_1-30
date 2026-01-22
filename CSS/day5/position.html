@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            height: 500px;
+            width: 2000px;
+            border: 2px solid;
+        }
+        #div2{
+            height: 500px;
+            width: 2000px;
+            border: 2px solid;
+        }
+        img{
+            height: 300px;
+            width: 250px;
+        }
+        .img1{
+            /* static position will be fixed it will not take left, right, top, bottom */
+            position: static;
+            left: 200px;
+        }
+
+        .img2{
+        /* relative position will be changed as we give any left, right, top, bottom it will take form its own position */
+        position: relative;
+        top: 200px;
+        /* left: 20px;  */
+        }
+
+        .img3{
+            /* absolute position will take from main contianer border if you give any left, right, top, bottom */
+            position: absolute;
+            /* left: 50px; */
+        }
+          .img4{
+            /* fixed position will be fixed when you scroll it will be fixed */
+            /* position: fixed;  */
+
+        } 
+        .img5{
+            /* it will for only parent container it will dynamically with others */
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhzYVLRNGoIZ2C-3pggYqEXaezAjKAI1yrN_N-LFbFqEwjN82TxMCK8le5LXaeQy7IyZ9kIizuOsrgChvR8B5cwVSiT93GBAzp8BrZw&s=10" alt="" class="img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDN_x3qsMAqlbRhBpGwv44hqQphdGCvCQkGD4hTuAww4EhMOVJyT2l55-hj2WMNBfit5ExLhwCdozA9eD-Ae2yCsqtFAoTvzu23yt80uCWrQ&s=10" alt="" class="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSP7W26FBqVuOiE__hWe052eM_X6_dF9Zu_itfxu8meKsjrcmwJf_YfdmEXo3mgwWWZg5yWRfASKVNyYyfcUUKq-kT1onSBnCS5db1W1_&s=10" alt="" class="img3">
+        <img src="https://static.cricbuzz.com/a/img/v1/1080x608/i1/c826099/despite-being-indias-most-reliable-middle-order-batter-rahul-has-rarely-been-allowed-a-sustained-run-at-no-5.jpg" alt="" class="img4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeXJGp5Q3iNiXRmy783RbI_jvuP5_oD1lTY3e2p-r-f_GOTChHqcYgSYyE2ZYRw2cUg-Jccp4VzKMyvXbuPDY6pLew0dI-RmLR-PKQIA&s=10" alt="" class="img5">
+    </div>
+    <div id="div2">
+
+    </div>
+</body>
+</html>

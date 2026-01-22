@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box1{
+            height: 350px;
+            width: 350px;
+            background-color: aliceblue;
+            border: 1px dotted;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .box2{
+            height: 60px;
+            width: 80px;
+            background-color: blue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: 40%;
+            /* animation-name: bounce; */
+            /* position: relative; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+        }
+
+        /* @keyframes bounce{
+            from{
+              height: 0px;
+            }
+            to{
+               height: 350px;
+            }
+        } */
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box1">
+         <marquee behavior="alternate" direction="down"><div class="box2">BOUNCE</div></marquee>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* body{
+    color: brown;
+    border: 1px solid;
+    height: 1000px;
+    width: 2000px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    font-size: 30px;
+
+} */
+
+p{
+    color: red;
+    border: 1px solid;
+    font-size: 40px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTyZ_1c8cpO__cCvSa4onogWni2WLZ0vqw7sgMvXKCa6gygDOgWdGrmTH2kuEpCSG3Mwg27W7Db7XbiZmw);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-align: center; */
+    /* text-align: left; */
+    text-align: right;
+
+    /* ----------------------------------------------------------------------------------------------------------------------------- */
+    /* text-transform: capitalize; */
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+
+  
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+      
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+
+    /* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+     /* text-shadow: 5px 5px green; */
+
+     /*------------------------------------------  */
+
+     /* letter-spacing: 5px; */
+
+     /* -------------------------------------- */
+     /* word-spacing: 5px; */
+
+     /* ------------------------------ */
+     line-height: 100px;
+
+}
+
+

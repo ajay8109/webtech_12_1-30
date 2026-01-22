@@ -1,0 +1,34 @@
+.container{
+    background-color: blueviolet;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: brown;
+    position: relative;
+    animation-name: debug;
+    animation-duration: 4s;
+
+}
+
+@keyframes debug{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+        background-color: yellow;
+    }
+    50%{
+        top: 250px;
+        left: 250px;
+        background-color: black;
+    }
+    100%{
+          top: 0px;
+          left: 250px;
+    }
+
+}

@@ -1,0 +1,22 @@
+.translate{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: transform 1s;
+}
+
+.translate:hover{
+    transform: translate(20px, 30px);
+}
+
+/* ------------------------------------------------------------------------------------------- */
+.scale{
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+    transition: transform 1s;
+}
+
+.scale:hover{
+    transform: scale(1.5);
+}

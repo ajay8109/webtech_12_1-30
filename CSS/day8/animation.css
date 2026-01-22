@@ -1,0 +1,33 @@
+.container{
+    background-color: blueviolet;
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: brown;
+    position: relative;
+    animation-name: debug;
+    animation-duration: 3s;
+
+    animation-iteration-count: 3;
+    /* animation-delay: 3s; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    animation-direction: alternate-reverse;
+    
+}
+
+@keyframes debug {
+    from {
+        width: 250px;
+    }
+   to {
+    width: 1000px;
+   }
+
+}
