@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 150px 150px 150px;
+            gap: 20px;
+            padding: 10px;
+            
+            
+        }
+        .grid1{
+            /* background-color: aqua; */
+            border: 2px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #box1{
+            grid-row: span 3;
+            background-color: yellowgreen;
+        }
+        #box2{
+            grid-column: span 2;
+            background-color: brown;
+        }
+        #box3{
+           background-color: red;
+        }
+        #box4{
+          background-color: aqua;
+        }
+        #box5{
+            background-color: brown;
+        }
+        #box6{
+           grid-row: span 2;
+           background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="grid1" id="box1">item1</div>
+        <div class="grid1" id="box2">item2</div>
+        <div class="grid1" id="box3">item3</div>
+        <div class="grid1" id="box4">item4</div>
+        <div class="grid1" id="box5">item5</div>
+        <div class="grid1" id="box6">item6</div>
+        <div class="grid1" id="box7">item7</div>
+        <div class="grid1" id="box8">itme8</div>
+      </div>
+</body>
+</html>
