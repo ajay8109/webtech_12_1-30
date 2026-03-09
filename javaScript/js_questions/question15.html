@@ -1,0 +1,20 @@
+<!-- prompt the user to enter n numbers(ask for n first),store them in an array ,then output the sum of all elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let number = Number(prompt("Enter your number"));
+        let sum = 0;
+        for(let i = 1; i <= number; i++){
+            sum = sum + i;
+        }
+        document.writeln(sum);
+    </script>
+</body>
+</html>
