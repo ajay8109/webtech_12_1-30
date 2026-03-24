@@ -1,0 +1,46 @@
+// Document object model
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="demo">indore</h1> -->
+
+   <h1 class="c1">indore1</h1> 
+   <h1 class="c1">indore2</h1>
+
+   <!-- <input type="email" placeholder="enter your email" name="email"> -->
+
+    <script>
+
+        // const demo = document.getElementById("demo");
+        // demo.style.color = "black";
+        // console.log(demo);
+
+
+        // const c1 = document.getElementsByClassName("c1");
+        // c1[0].style.color = "black";
+        // c1[1].style.color = "red";
+
+
+        // const c1 = document.querySelector(".c1");
+        // c1.style.color = "green";
+        // console.log(c1);
+
+
+        const c1 = document.querySelectorAll(".c1");
+        c1[0].style.color = "yellow";
+        c1[1].style.color = "green";
+        console.log(c1);
+
+        // const email = document.getElementsByName("email")
+        // email[0].style.color = "yellow";
+        // console.log(email);
+        
+    </script>
+</body>
+</html>

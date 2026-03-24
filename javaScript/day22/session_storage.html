@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" style="border: 1px solid red;">
+        Email : <input type="email" placeholder="enter your email" id="email" style="text-align: center;"><br>
+        name : <input type="name " placeholder="enter your name" id="name">
+        address : <input type="address" placeholder="enter your your adsress" id="addr">
+        password : <input type="password" placeholder="enter your password" id="pass" style="text-align: center;"><br>
+
+        Email1 : <input type="email" id="email1"><br>
+    
+        <button type="submit" id="btn">Submit</button><br>
+        <button type="get" id="btn1"> Get</button><br>
+        
+        <p id="result"></p>
+    
+     </form>
+
+     <script>
+                  const btn = document.getElementById("btn")
+                  btn.onclick = function(){
+                    const email = document.getElementById("email").value;
+                    const password = document.getElementById("pass").value;
+                    const name = document.getElementById("name").value;
+                    const address = document.getElementById("addr").value
+
+                    const userData = {
+                        name:name,
+                        address:address,
+                        password:password
+                    }
+
+                    //store
+
+                    window.sessionStorage.setItem(email,JSON.stringify(userData));
+                    alert("Data saved to local storage");
+                  }
+
+                  const bt1 = document.getElementById("bnt1")
+                  btn1.onclick = function(e){
+
+                    e.preventDefault();
+                    const email1 = document.getElementById("email1").value;
+
+                    let obj = window.sessionStorage.getItem(email1)
+
+                    let obj1 = JSON.parse(obj)
+
+                    if(obj1 != null){
+                        document.getElementById("result").innerText = " name: "+ obj1.name +  "adress : " + obj1.address + " password :" + obj1.password;
+
+                    }else{
+                        document.getElementById("result").innerText = "data not found"
+
+                    }
+            
+   
+
+
+                  }
+
+
+
+        
+                 
+   
+   
+   
+   </script>
+     
+
+</body>
+</html>
