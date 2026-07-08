@@ -1,6 +1,6 @@
 // check number 6 is perfect number or not using the for loop;
 
-let num = 6;
+let num = 28;
 perfect = 0;
 
 for(let i = 1; i < num; i++){

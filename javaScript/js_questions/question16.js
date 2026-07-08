@@ -1,18 +1,32 @@
-// merge this arrayv without flat method
+// let arr = [1, 2, ['hy', 'by', ['indore', 1000], 1000, 2000]];
 
-let arr = [1,2, ['hy', 'by', ['indore',1000], 1000, 2000]];
+// let result = [];
 
-let result = [];
+// function flattenArray(arr) {
+//     for (let item of arr) {
+//         if (Array.isArray(item)) {
+//             flattenArray(item);
+//         } else {
+//             result.push(item);
+//         }
+//     }
+// }
+
+// flattenArray(arr);
+
+// console.log(result);
 
 
-function mergeArr(arr1){
-    if(Array.isArray(arr1)){
-        arr1.forEach( v=> mergeArr(v))
-    }else{
-        result.push(arr1)
-    }
-}
+// function flattenArray(arr){
+//     for (let item of arr){
+//         if(Array.isArray(item)){
+//             flattenArray(item)
+//         } else{
+//             result.push(item);
+//         }
+//     }
+// }
+// flattenArray(arr)
+// console.log(result)
 
-
-mergeArr(arr);
-console.log(result);
+let num = 28;

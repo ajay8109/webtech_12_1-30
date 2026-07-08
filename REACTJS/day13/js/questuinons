@@ -1,0 +1,172 @@
+// let num = 121;
+// let num1 = num
+// let palindrome = ""
+
+// while(num>0){
+//     digit = num % 10;
+//     palindrome = (palindrome * 10) + digit
+//     num = Math.floor(num/10)
+// }
+
+// console.log(palindrome)
+
+
+
+
+// let num = 153;
+// let num1 = num;
+// let armStrong = 0;
+
+
+// while(num>0) {
+//     let digit = num % 10;
+//     armStrong = armStrong + digit* digit * digit;
+//     num = Math.floor(num/10)
+// }
+
+// console.log(armStrong)
+
+
+// let num = 145;
+// let original = num;
+// let strong = 0;
+
+// while(num>0){
+//     digit = num % 10;
+//     let i = 1;
+//     let fact = 1;
+//     while(i <= digit){
+//         fact = fact * i;
+//         i++;
+//     }
+//     strong = strong + fact;
+//     num = Math.floor(num/10);
+
+// }
+// console.log(strong)
+
+
+
+// let num = 28;
+// let original = num;
+// let perfect = 0;
+
+// for(let i = 1; i < num; i++){
+//     if(num % i === 0){
+//         perfect = perfect + i;
+//     }
+// }
+// console.log(perfect)
+
+
+// let num1 = 28;
+// let sum = 0;
+
+// for (let i = 1; i < num1; i++) {
+//   if (num1 % i === 0) {
+//     sum += i;
+//   }
+// }
+
+// if (sum === num1) {
+//   console.log("Perfect Number");
+// } else {
+//   console.log("Not a Perfect Number");
+// }
+
+// 
+
+// let arr = [1, 2, ['hy', 'by', ['indore', 1000], 1000, 2000]];
+
+// let array = [];
+
+// function isArray(arr1){
+//     for(item of arr1){
+//         if(Array.isArray(item)) {
+//          isArray(item)   
+//     } else {
+//         array.push(item);
+//     }
+// }
+//   console.log(array);
+// }
+
+// isArray(arr)
+
+
+
+// let s1 = "ajay"
+
+// let arr = s1.split("")
+
+
+// for(let i = 1; i < arr.length; i++){
+//     let count = 0;
+//     for(let j = 1; j < arr.length; j++){
+//         if(arr[i] === arr[j] && i > j){
+//             break;
+//         } if(arr[i] === arr[j]){
+//             count++
+//         }
+//     }
+//     if(count > 0) {
+//      console.log(arr[i] + " occures" + count);
+//     }
+// }
+
+
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+// .then((response)=> {
+//     return response.json() 
+// })
+// .then((data) => {
+//     console.log(data)
+// })
+// .catch((err) => {
+//     console.log(err)
+// })
+    
+
+// const str = "madam";
+// let reve = "";
+
+
+// for(let i = str.length-1; i >= 0; i-- ){
+//      reve = reve + str[i];
+// }
+// console.log(reve);
+
+
+
+// let star = 0;
+// let space = 5;
+
+// for(let i = 1; i <=5; i++){
+//     space--;
+//     star + 1;
+//     let row = "";
+
+//     for(let j = 1; j <=space; j++){
+//        row = row + " ";
+
+//     }
+//     for(let j = 1; j<=star; j++){
+//         row = row + "*"
+//     }
+// console.log(row);
+
+
+
+// }
+
+
+let arr = [2,4,6,8,10]
+
+
+let arr1 = arr.reduce((item,total)=>{
+      return total = total + item;
+},0)
+
+console.log(arr1);
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <form action="">
+         <input type="emai" placeholder="enter your email" id="email">
+         <input type="password" placeholder="enter your password" id="pass">
+         <button id="btn">submit</button>
+
+
+       </form>
+
+
+       <script>
+       const btn = document.getElementByIdI("btn")
+
+       btn.onclick = function(){
+
+     const email = document.getElementById("email").vlaue;
+     const pass  = document.getElementById("pass").vlaue;
+
+     window.localStorage.setItem(email,pass)
+        alert("data uploaded succefulyy");
+     
+     
+     
+        
+     }
+
+ 
+
+
+       </script>
+</body>
+</html>
