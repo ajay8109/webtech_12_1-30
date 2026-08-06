@@ -8,7 +8,7 @@ router.post("/" , async (req, res)=>{
         const user = await User.create(req.body);
         res.status(201).json({success:true, data:user}) 
     } catch (error) {
-        res.json(500).json({success:false, error:message.error})
+        res.status(500).json({success:false, error:error.message})
     }
 })
 
@@ -42,9 +42,9 @@ router.patch("/:id", async (req,res) => {
 router.delete("/:id", async (req,res)=>{
     try {
         await User.findByIdAndDelete(req.params.id);
-        res.status(200).json({sucess:true});
+        res.status(200).json({success:true});
     } catch (error) {
-         res.status(500).json({sucess:false,error:message.error});
+         res.status(500).json({success:false, error:error.message});
     }
 })
 
